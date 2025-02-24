@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Client Data</title>
+</head>
+<body>
+    <h1>Client Data</h1>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Credit History</th>
+            <th>Married</th>
+            <th>Coapplicant Income</th>
+            <th>Prediction</th>
+        </tr>
+        {% for client in clients %}
+        <tr>
+            <td>{{ client.id }}</td>
+            <td>{{ client.credit_history }}</td>
+            <td>{{ client.married }}</td>
+            <td>{{ client.coapplicant_income }}</td>
+            <td>{{ client.prediction }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
